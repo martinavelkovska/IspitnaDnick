@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <div class="container" style="align-items:center;margin-top:30px">
+    <div class="dropdown" >
+  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"  style="background-color:green; width:255px">
+    All departments
+  </a>
+
+  <ul class="dropdown-menu">
+      {% for p in kategorii %}
+    <li><a class="dropdown-item" href="#">{{ p.ime }}</a></li>
+      {% endfor %}
+  </ul>
+
+</div>
+        <div class="container">
+    {% load static %}
+    <img src="{% static 'banner.jpg' %}" alt="pic" class="img-fluid" style="margin-left: 358px; margin-top: -36px;">
+
+            <h1  class="fw-bold" style="  margin-left: 420px;  margin-top: -243px;">Vegetable <br> 100% Organic</h1>
+            <p style=" margin-left: 420px;  margin-top:-160px; color:green; font-weight:bold;">FRUIT FRESH</p>
+            <p style="margin-left: 420px;  margin-top: 125px">Free Pickup and Delivery Available</p>
+            <button class="btn btn-success" style="margin-left: 420px;  margin-top: 40px;font-weight:bold">Shop Now</button>
+</div>
+
+</div>
+</head>
+
+<body>
+
+<div class="container" style="align-items:center; margin:auto; padding-top:105px;">
+<h1 style="margin-left: 480px; font-weight:bold">From the blog</h1>
+     <hr style="    border: none; height: 7px; background-color: green; width: 73px; font-weight: bold; margin-left: 570px">
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="card" style="width: 18rem; border:0px">
+                <img src="{% static 'blog-1.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title" style=" font-size: revert;font-weight:bold">Cooking tips make cooking simple</h5>
+                    <p class="card-text" style="font-size:small">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 18rem; border:0px">
+                <img src="{% static 'blog-2.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title" style=" font-size: revert;font-weight:bold">6 ways to prepare for breakfast for 30</h5>
+                    <p class="card-text" style="font-size:small">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 18rem; border:0px">
+                <img src="{% static 'blog-3.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title" style=" font-size: revert;font-weight:bold">Visit the clean farm in the US</h5>
+                    <p class="card-text" style="font-size:small">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<section class="" style="    padding-top: 73px;">
+  <!-- Footer -->
+  <footer class="text-white text-center" style="padding-top:50px; background-color:#ccdbd9;">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+
+        <!--Grid column-->
+          <div class="col">
+
+    <ul class="list-group " style="text-align:initial; background-color:#ccdbd9;">
+        <p style="color:black; font-weight:bold"><small>FINKI Exam</small></p>
+        <li class="list-group-item" style="  background-color:#ccdbd9; border: 0px;    margin-left: -16px;">Organization</li>
+        <li class="list-group-item" style="  background-color:#ccdbd9; border: 0px;    margin-left: -16px;">Deparments</li>
+        <li class="list-group-item" style="  background-color:#ccdbd9;border: 0px;    margin-left: -16px;">Contact</li>
+
+    </ul>
+
+              </div>
+                    <div class="col">
+
+    <ul class="list-group " style="text-align:initial;  background-color:#ccdbd9;">
+        <p style="color:black; font-weight:bold"><small>Studies</small></p>
+        <li class="list-group-item"style=" background-color:#ccdbd9; border: 0px;    margin-left: -16px;">Bachelors</li>
+        <li class="list-group-item"style="  background-color:#ccdbd9;border: 0px;    margin-left: -16px;">Masters</li>
+        <li class="list-group-item" style="  background-color:#ccdbd9; border: 0px;    margin-left: -16px;">PhD</li>
+    </ul>
+              </div>
+                    <div class="col">
+    <ul class="list-group" style="text-align:initial;   background-color:#ccdbd9;">
+        <p style="color:black; font-weight:bold"><small>Staff</small></p>
+        <li class="list-group-item" style="  background-color:#ccdbd9; border: 0px;     margin-left: -16px;">Administrative</li>
+        <li class="list-group-item" style="  background-color:#ccdbd9;border: 0px;     margin-left: -16px;">Teaching</li>
+    </ul>
+              </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+
+        <!--Grid column-->
+
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</section>
+</body>
+</html>
